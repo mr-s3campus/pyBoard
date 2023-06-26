@@ -1,1 +1,0 @@
-[{"id": "12053720350691218262222", "title": "SICUREZZA DEI SISTEMI DI ELABORAZIONE DELL'INFORMAZIONE (12 cfu) - G. LO RE", "start": "2023-02-27 09:00", "descAulaBreve": "A310 - E.6", "oidAula": "151", "end": "2023-02-27 12:00"}]
