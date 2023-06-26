@@ -1,0 +1,7 @@
+[
+    {
+        "titolo": "Sospensione Lezioni di Robotica",
+        "data_avviso": "2022-10-01",
+        "contenuto": "Si comunica che le lezioni di Robotica sono sospese fino a data da destinarsi."
+    }
+]

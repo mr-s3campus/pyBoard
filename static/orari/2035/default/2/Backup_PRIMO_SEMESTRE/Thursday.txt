@@ -1,0 +1,1 @@
+[{"descAulaBreve": "A310 - E.6", "end": "2022-10-06 17:00", "id": "12054020350691217229562", "oidAula": "151", "start": "2022-10-06 14:00", "title": "BIG DATA (12 cfu) - R. PIRRONE"}, {"descAulaBreve": "A310 - E.6", "end": "2022-10-06 12:00", "id": "12051320350691217228922", "oidAula": "151", "start": "2022-10-06 09:00", "title": "INTELLIGENZA ARTIFICIALE (12 cfu) - S. GAGLIO"}]
