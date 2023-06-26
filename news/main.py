@@ -1,0 +1,3 @@
+import getNews
+
+getNews.getNews()
