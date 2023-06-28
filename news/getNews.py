@@ -6,15 +6,25 @@ import constants
 import getNewsText
 
 
-def getNews():
+def getNews(index: int):
     """Function to fetch all the news about Laurea Magistrale 2035 - Ingegneria Informatica
+
+    Args:
+        index: int.\n
+        0 to take news (website section 'archivio news')\n
+        1 to take announcements (website section 'archivio bacheca')
 
     Returns:
         list[dict[str: Any]]: news list (JSON formatted)
     """
 
-    path = os.path.join(os.path.curdir + constants.NEWS_PATH)
-    defaultPath = os.path.join(os.path.curdir + constants.NEWS_DEFAULT_PATH)
+    path = os.path.join(
+        os.path.curdir + (constants.NEWS_PATH if index == 0 else constants.ANN_PATH)
+    )
+    defaultPath = os.path.join(
+        os.path.curdir
+        + (constants.NEWS_DEFAULT_PATH if index == 0 else constants.ANN_DEFAULT_PATH)
+    )
 
     try:
         page = request(method="get", url=constants.NEWS_URL, timeout=3)
@@ -22,7 +32,7 @@ def getNews():
         soup = BeautifulSoup(page.content, "html.parser")
 
         newsContainer = soup.find(id="centercontainertemplate-end")
-        section = newsContainer.findChildren("section")[1]
+        section = newsContainer.findChildren("section")[index]
 
         titles = [i.getText() for i in section.findChildren("h2", {"class": "title"})]
         dates = [
